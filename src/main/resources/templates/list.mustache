@@ -1,0 +1,23 @@
+{{> layout/header}}
+
+<section>
+    <table border="1">
+        <tr>
+            <th>번호</th>
+            <th>제목</th>
+            <th></th>
+        </tr>
+        {{#models}}
+            <tr>
+                <td>{{id}}</td>
+                <td>{{title}}</td>
+                <td><a href="/board/{{id}}">상세보기</a></td>
+            </tr>
+        {{/models}}
+
+
+    </table>
+</section>
+
+</body>
+</html>

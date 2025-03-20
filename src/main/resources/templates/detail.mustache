@@ -1,0 +1,18 @@
+{{> layout/header}}
+
+<section>
+    <a href="/board/{{model.id}}/update-form">수정화면으로 가기</a>
+    <form action="/board/{{model.id}}/delete" method="post">
+        <button type="submit">삭제</button>
+    </form>
+    <div>
+        번호 : {{model.id}} <br>
+        제목 : {{model.title}} <br>
+        내용 : {{model.content}} <br>
+        작성일 : {{model.createdAt}} <br>
+        닉네임 : {{model.nickname}} <br>
+    </div>
+</section>
+
+</body>
+</html>

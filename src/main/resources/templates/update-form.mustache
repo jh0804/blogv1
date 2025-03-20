@@ -1,0 +1,12 @@
+{{> layout/header}}
+
+<section>
+    <form action="/board/{{model.id}}/update" method="post" enctype="application/x-www-form-urlencoded">
+        <input type="text" name="title" value={{model.title}}><br>
+        <input type="text" name="content" value={{model.content}}><br>
+        <button type="submit">글수정</button>
+    </form>
+</section>
+
+</body>
+</html>
